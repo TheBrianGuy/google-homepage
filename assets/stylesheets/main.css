@@ -46,3 +46,24 @@ table {
   border-spacing: 0;
 }
 
+
+
+body {
+	background: white;
+}
+
+
+.logo	{
+	display: block;
+	margin: 150px 1px;
+}
+
+
+.search	{
+	color: grey;
+	background: rgb(246, 246, 246);
+	border: none; 
+	margin: 5px;
+	padding: 9px 16px;
+	
+}
