@@ -46,6 +46,27 @@ table {
   border-spacing: 0;
 }
 
+/*
+	===============================================
+	Grid
+	===============================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 960px;
+}
+
 
 
 body {
@@ -55,15 +76,20 @@ body {
 
 .logo	{
 	display: block;
-	margin: 150px 1px;
+	margin: 198px auto 10px auto;
 }
 
 
 .search	{
-	color: grey;
-	background: rgb(246, 246, 246);
-	border: none; 
-	margin: 5px;
-	padding: 9px 16px;
+	color: rgb(117, 117, 117);
+	background: rgb(242, 242, 242);
+	border: 1px solid rgb(242, 242, 242); 
+	margin: 4px;
+	padding: 0 16px;
 	
+}
+
+.search-container {
+	width: 286px;
+	margin: 0 auto;
 }
