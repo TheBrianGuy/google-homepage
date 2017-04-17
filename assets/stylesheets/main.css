@@ -61,18 +61,42 @@ table {
 }
 
 .container {
-	margin: 0 auto;
 	padding-left: 30px;
 	padding-right: 30px;
 	width: 960px;
 }
 
+/*
+	===============================================
+	Clearfix	
+	===============================================
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+
 
 
 body {
-	background: white;
+	background: rgb(255, 255, 255);
+	font-family: arial, sans-serif;
+	font-size: 13px;
 }
 
+a {
+	text-decoration: none;
+}
 
 .logo	{
 	display: block;
@@ -86,10 +110,53 @@ body {
 	border: 1px solid rgb(242, 242, 242); 
 	margin: 4px;
 	padding: 0 16px;
-	
+	line-height: 27px;
+	font-weight: bold;
+	border-radius: 2px;
+}
+
+.search:hover {
+	color: rgb(34, 34, 34);
+	border: 1px solid rgb(198, 198, 198);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.main-container {
+	margin: 0 auto;
 }
 
 .search-container {
-	width: 286px;
+	width: 300px;
 	margin: 0 auto;
+}
+
+.header-links {
+	float: right;
+	line-height: 24px;
+}
+
+nav a {
+	color: rgb(102, 102, 102);
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.signin {
+	color: rgb(255, 255, 255);
+	background: rgb(67, 135, 253);
+	border: 1px solid rgb(67, 135, 253);
+	border-radius: 2px;
+	height: 30px;
+	width: 69px;
+	padding: 0 12px;
+}
+	
+.footer-left {
+	float: left;
+}
+
+.footer-right {
+	float: right;
 }
