@@ -121,6 +121,15 @@ a {
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+input {
+	display: block;
+	width: 559px;
+	height: 44px;
+	margin: 0 auto;
+	border: 1px solid rgb(230, 230, 230);
+	box-shadow: 0 1px 1px rgba(178, 178, 178, 0.8 );
+}
+
 .main-container {
 	margin: 0 auto;
 }
@@ -132,11 +141,27 @@ a {
 
 .header-links {
 	float: right;
-	line-height: 24px;
+	margin: 17px 33px;
+}
+
+.header-links img {
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+.header-links button {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+nav.header-links {
+	height: 30px;
 }
 
 nav a {
 	color: rgb(102, 102, 102);
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 nav a:hover {
@@ -150,7 +175,8 @@ nav a:hover {
 	border-radius: 2px;
 	height: 30px;
 	width: 69px;
-	padding: 0 12px;
+	padding: 0 3px;
+	font-weight: bold;
 }
 	
 .footer-left {
@@ -159,4 +185,9 @@ nav a:hover {
 
 .footer-right {
 	float: right;
+}
+
+.options {
+	height: 30px;
+	padding: 7px;
 }
