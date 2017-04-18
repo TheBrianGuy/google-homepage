@@ -100,7 +100,7 @@ a {
 
 .logo	{
 	display: block;
-	margin: 198px auto 10px auto;
+	margin: 135px auto 27px auto;
 }
 
 
@@ -108,8 +108,8 @@ a {
 	color: rgb(117, 117, 117);
 	background: rgb(242, 242, 242);
 	border: 1px solid rgb(242, 242, 242); 
-	margin: 4px;
-	padding: 0 16px;
+	margin: 2px;
+	padding: 5px 12px;
 	line-height: 27px;
 	font-weight: bold;
 	border-radius: 2px;
@@ -123,11 +123,24 @@ a {
 
 input {
 	display: block;
-	width: 559px;
+	width: 584px;
 	height: 44px;
-	margin: 0 auto;
 	border: 1px solid rgb(230, 230, 230);
 	box-shadow: 0 1px 1px rgba(178, 178, 178, 0.8 );
+}
+
+.search-div {
+	position: relative;
+	width: 584px;
+	height: 44px;
+	margin: 0 auto 30px auto;
+}
+
+.mic {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	height: 20px;
 }
 
 .main-container {
@@ -135,13 +148,13 @@ input {
 }
 
 .search-container {
-	width: 300px;
+	width: 269px;
 	margin: 0 auto;
 }
 
 .header-links {
 	float: right;
-	margin: 17px 33px;
+	margin: 16px 28px;
 }
 
 .header-links img {
@@ -150,8 +163,8 @@ input {
 }
 
 .header-links button {
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 6px;
+	margin-right: 6px;
 }
 
 nav.header-links {
@@ -160,8 +173,8 @@ nav.header-links {
 
 nav a {
 	color: rgb(102, 102, 102);
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 6px;
+	margin-right: 6px;
 }
 
 nav a:hover {
@@ -179,15 +192,35 @@ nav a:hover {
 	font-weight: bold;
 }
 	
-.footer-left {
-	float: left;
-}
-
-.footer-right {
-	float: right;
-}
 
 .options {
 	height: 30px;
 	padding: 7px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	background-color: rgb(242, 242, 242);
+	padding: 14px 25px;
+	width: 100%;
+}
+
+footer a {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.navfooter {
+	position: relative;
+}
+
+.footer-left {
+	position: absolute;
+	right: 0;
+}
+
+.footer-right {
+	position: absolute;
+	left: 0;
 }
