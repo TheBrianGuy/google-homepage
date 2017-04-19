@@ -64,6 +64,24 @@ table {
 	padding-left: 30px;
 	padding-right: 30px;
 	width: 960px;
+	margin: 0 auto;
+}
+/*
+.main-container {
+	margin: 0 auto;
+}
+*/
+
+/*
+	===============================================
+	Custom styles	
+	===============================================
+*/
+
+body {
+	background: rgb(255, 255, 255);
+	font-family: arial, sans-serif;
+	font-size: 13px;
 }
 
 /*
@@ -85,24 +103,102 @@ table {
 	*zoom: 1;
 }
 
-
-
-
-body {
-	background: rgb(255, 255, 255);
-	font-family: arial, sans-serif;
-	font-size: 13px;
-}
+/*
+	===============================================
+	Links
+	===============================================
+*/
 
 a {
 	text-decoration: none;
 }
 
+nav a {
+	color: rgb(102, 102, 102);
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+/*
+	===============================================
+	Buttons
+	===============================================
+*/
+
+.header-links button {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+/*
+	===============================================
+	Primary header
+	===============================================
+*/
+
+.header-links {
+	float: right;
+	margin: 16px 28px;
+}
+
+.header-links img {
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+nav.header-links {
+	height: 30px;
+}
+
+/*
+	===============================================
+	Primary footer
+	===============================================
+*/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	background-color: rgb(242, 242, 242);
+	padding: 14px 17px;
+	width: 100%;
+	height: 42px;
+	border-top: 1px solid rgb(230, 230, 230);
+}
+
+footer a {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.navfooter {
+	position: relative;
+}
+
+.footer-right {
+	position: absolute;
+	right: 0;
+}
+
+.footer-left {
+	position: absolute;
+	left: 0;
+}
+
+/*
+	===============================================
+	Main content
+	===============================================
+*/
+
 .logo	{
 	display: block;
 	margin: 135px auto 27px auto;
 }
-
 
 .search	{
 	color: rgb(117, 117, 117);
@@ -143,42 +239,9 @@ input {
 	height: 20px;
 }
 
-.main-container {
-	margin: 0 auto;
-}
-
 .search-container {
 	width: 269px;
 	margin: 0 auto;
-}
-
-.header-links {
-	float: right;
-	margin: 16px 28px;
-}
-
-.header-links img {
-	vertical-align: middle;
-	margin-top: -1px;
-}
-
-.header-links button {
-	margin-left: 6px;
-	margin-right: 6px;
-}
-
-nav.header-links {
-	height: 30px;
-}
-
-nav a {
-	color: rgb(102, 102, 102);
-	margin-left: 6px;
-	margin-right: 6px;
-}
-
-nav a:hover {
-	text-decoration: underline;
 }
 
 .signin {
@@ -192,35 +255,8 @@ nav a:hover {
 	font-weight: bold;
 }
 	
-
 .options {
 	height: 30px;
 	padding: 7px;
 }
 
-footer {
-	position: absolute;
-	bottom: 0;
-	background-color: rgb(242, 242, 242);
-	padding: 14px 25px;
-	width: 100%;
-}
-
-footer a {
-	padding-left: 8px;
-	padding-right: 8px;
-}
-
-.navfooter {
-	position: relative;
-}
-
-.footer-left {
-	position: absolute;
-	right: 0;
-}
-
-.footer-right {
-	position: absolute;
-	left: 0;
-}
