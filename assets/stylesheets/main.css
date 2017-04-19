@@ -66,11 +66,6 @@ table {
 	width: 960px;
 	margin: 0 auto;
 }
-/*
-.main-container {
-	margin: 0 auto;
-}
-*/
 
 /*
 	===============================================
@@ -115,12 +110,16 @@ a {
 
 nav a {
 	color: rgb(102, 102, 102);
-	margin-left: 6px;
-	margin-right: 6px;
+	padding: 7px;
 }
 
 nav a:hover {
 	text-decoration: underline;
+}
+
+footer a {
+	margin-right: 7px;
+	margin-left: 7px;
 }
 
 /*
@@ -129,9 +128,33 @@ nav a:hover {
 	===============================================
 */
 
-.header-links button {
-	margin-left: 6px;
-	margin-right: 6px;
+button {
+	border-radius: 2px;
+}
+
+.signin-btn {
+	color: rgb(255, 255, 255);
+	background: rgb(67, 135, 253);
+	border: 1px solid rgb(67, 135, 253);
+	height: 30px;
+	width: 69px;
+	font-weight: bold;
+}
+
+.search-button	{
+	color: rgb(117, 117, 117);
+	background: rgb(242, 242, 242);
+	border: 1px solid rgb(242, 242, 242); 
+	margin: 2px;
+	padding: 5px 12px;
+	line-height: 27px;
+	font-weight: bold;
+}
+
+.search-button:hover {
+	color: rgb(34, 34, 34);
+	border: 1px solid rgb(198, 198, 198);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /*
@@ -140,18 +163,16 @@ nav a:hover {
 	===============================================
 */
 
-.header-links {
+.header-right {
 	float: right;
 	margin: 16px 28px;
 }
 
-.header-links img {
-	vertical-align: middle;
-	margin-top: -1px;
-}
-
-nav.header-links {
+/* Vertically center the image in the header */
+.options {
 	height: 30px;
+	padding: 7px;
+	vertical-align: middle;
 }
 
 /*
@@ -170,23 +191,12 @@ footer {
 	border-top: 1px solid rgb(230, 230, 230);
 }
 
-footer a {
-	padding-left: 7px;
-	padding-right: 7px;
-}
-
-.navfooter {
-	position: relative;
-}
-
 .footer-right {
-	position: absolute;
-	right: 0;
+float: right;
 }
 
 .footer-left {
-	position: absolute;
-	left: 0;
+float: left;
 }
 
 /*
@@ -200,21 +210,12 @@ footer a {
 	margin: 135px auto 27px auto;
 }
 
-.search	{
-	color: rgb(117, 117, 117);
-	background: rgb(242, 242, 242);
-	border: 1px solid rgb(242, 242, 242); 
-	margin: 2px;
-	padding: 5px 12px;
-	line-height: 27px;
-	font-weight: bold;
-	border-radius: 2px;
-}
-
-.search:hover {
-	color: rgb(34, 34, 34);
-	border: 1px solid rgb(198, 198, 198);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+/* .input-div exists as a parent class to .mic so that the absolute position can be used to place the mic inside the input box */
+.input-div {
+	position: relative;
+	width: 584px;
+	height: 44px;
+	margin: 0 auto 30px auto;
 }
 
 input {
@@ -223,13 +224,14 @@ input {
 	height: 44px;
 	border: 1px solid rgb(230, 230, 230);
 	box-shadow: 0 1px 1px rgba(178, 178, 178, 0.8 );
+	padding-left: 10px;
+	padding-right: 40px;
+	font-size: 16px;
 }
 
-.search-div {
-	position: relative;
-	width: 584px;
-	height: 44px;
-	margin: 0 auto 30px auto;
+input:hover,
+input:focus {
+	box-shadow: 0 2px 2px rgba(178, 178, 178, 0.8 );
 }
 
 .mic {
@@ -239,24 +241,8 @@ input {
 	height: 20px;
 }
 
-.search-container {
+/* keep both search buttons horizontally centered on the page */
+.search-btn-container {
 	width: 269px;
 	margin: 0 auto;
 }
-
-.signin {
-	color: rgb(255, 255, 255);
-	background: rgb(67, 135, 253);
-	border: 1px solid rgb(67, 135, 253);
-	border-radius: 2px;
-	height: 30px;
-	width: 69px;
-	padding: 0 3px;
-	font-weight: bold;
-}
-	
-.options {
-	height: 30px;
-	padding: 7px;
-}
-
