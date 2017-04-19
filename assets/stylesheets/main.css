@@ -81,25 +81,6 @@ body {
 
 /*
 	===============================================
-	Clearfix	
-	===============================================
-*/
-
-.group:before,
-.group:after {
-	content: "";
-	display: table;
-}
-.group:after {
-	clear: both;
-}
-.group {
-	clear: both;
-	*zoom: 1;
-}
-
-/*
-	===============================================
 	Links
 	===============================================
 */
@@ -163,16 +144,19 @@ button {
 	===============================================
 */
 
-.header-right {
-	float: right;
-	margin: 16px 28px;
+.header-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;	
 }
 
-/* Vertically center the image in the header */
-.options {
-	height: 30px;
-	padding: 7px;
-	vertical-align: middle;
+.header-nav li {
+	float: right;
+}
+
+.header-nav li a {
+	display: block;
+	text-align: center;
 }
 
 /*
@@ -182,7 +166,7 @@ button {
 */
 
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	background-color: rgb(242, 242, 242);
 	padding: 14px 17px;
@@ -191,11 +175,11 @@ footer {
 	border-top: 1px solid rgb(230, 230, 230);
 }
 
-.footer-right {
+.footer-nav-right {
 float: right;
 }
 
-.footer-left {
+.footer-nav-left {
 float: left;
 }
 
