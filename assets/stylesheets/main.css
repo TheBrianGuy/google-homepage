@@ -148,10 +148,13 @@ button {
 	position: fixed;
 	top: 0;
 	width: 100%;	
+	padding: 16px 29px;
 }
 
 .header-nav li {
 	float: right;
+	margin-left: 3px;
+	margin-right: 3px;
 }
 
 .header-nav li a {
